@@ -12,9 +12,9 @@ def is_enabled(value, default):
 
 # Bot information
 PORT = environ.get("PORT", "8080")
-SESSION = environ.get('SESSION', '')
-API_ID = int(environ.get('API_ID', '13556430'))
-API_HASH = environ.get('API_HASH', '3531771c0d58b9ffc44d12f38c5edbf5')
+SESSION = environ.get('SESSION', 'Render')
+API_ID = int(environ.get('API_ID', '9323694'))
+API_HASH = environ.get('API_HASH', '34a0b2551aacd866c3729f7044525353')
 BOT_TOKEN = environ.get('BOT_TOKEN', "5879211417:AAGq7q7aF4iPQxMpMirgLG1s8t0PuKlfl6g")
 
 # Bot settings
@@ -37,9 +37,9 @@ AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_chan
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Ayush64047:Ayush64047@cluster5.2xihv2h.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster5")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_file')
 
 # Channel Button Links
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/blackest_harbour')
@@ -69,7 +69,7 @@ LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False")
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
 INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
-FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).split()]
+FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', -1001605409121)).split()]
 MELCOW_NEW_USERS = is_enabled((environ.get('MELCOW_NEW_USERS', "True")), True)
 PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), False)
 PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
@@ -81,12 +81,12 @@ MAUTO_DELETE = is_enabled((environ.get('MAUTO_DELETE', "True")), True)
 
 # Delete Time
 DELETE_TIME = int(environ.get('DELETE_TIME', 3000))
-SPL_DELETE_TIME = int(environ.get('SPL_DELETE_TIME', 1200))
+SPL_DELETE_TIME = int(environ.get('SPL_DELETE_TIME', 5000))
 
 # URL SHORTNER
 
-URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', '')
-URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', '')
+URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', '652e60db3da459d3f15dbb1775fa0aaf62b6ec4c')
+URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', 'shorturllink.in')
 
 LOG_STR = "Current Cusomized Configurations are:-\n"
 LOG_STR += ("IMDB Results are enabled, Bot will be showing imdb details for you queries.\n" if IMDB else "IMBD Results are disabled.\n")
