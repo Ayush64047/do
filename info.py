@@ -48,7 +48,7 @@ SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/mdisk_bots')
 MSG_ALRT = environ.get('MSG_ALRT', 'LONG LIVE BLACK MARKET FED!')
 
 # Custom Chats
-SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', -1001557431626))
+SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', -1001529371079))
 FILE_CHANNEL = int(environ.get('FILE_CHANNEL', -1001664271836))
 FILE_CHANNEL_LINK = environ.get('FILE_CHANNEL_LINK', 'https://t.me/+BOskvi9PgTgzMmE1')
 HOW_DWLD_LINK = environ.get('HOW_DWLD_LINK', 'https://t.me/mdisk_bots/13')
